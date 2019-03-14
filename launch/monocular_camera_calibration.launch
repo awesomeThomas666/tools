@@ -1,0 +1,7 @@
+<!-- Launch in the camera namespace containing "image_raw" and "camera_info" -->
+<launch>
+
+  <node pkg="camera_calibration" type="cameracalibrator.py" name="camera_calibration" args="--size 6x9 --square 0.025 image:=/camera/image_raw camera:=/camera --no-service-check" output="screen">
+  </node>  
+
+</launch>

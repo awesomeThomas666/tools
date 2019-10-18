@@ -1,0 +1,65 @@
+{
+  "policy": null,
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": null,
+      "port": 443,
+      "listen": null,
+      "protocol": "vmess",
+      "sniffing": null,
+      "settings": {
+        "auth": null,
+        "udp": false,
+        "ip": null,
+        "address": null,
+        "clients": [
+          {
+            "id": "9a7fe6bd-795d-45ff-8c3a-f6e66e6bb6ba",
+            "alterId": 233,
+            "email": "t@t.tt",
+            "security": null
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "kcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": null
+        },
+        "tcpSettings": null,
+        "kcpSettings": {
+          "mtu": 1350,
+          "tti": 50,
+          "uplinkCapacity": 100,
+          "downlinkCapacity": 100,
+          "congestion": false,
+          "readBufferSize": 2,
+          "writeBufferSize": 2,
+          "header": {
+            "type": "wechat-video",
+            "request": null,
+            "response": null
+          }
+        },
+        "wsSettings": null,
+        "httpSettings": null,
+        "quicSettings": null
+      }
+    }
+  ],
+  "outbounds": null,
+  "stats": null,
+  "api": null,
+  "dns": null,
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": []
+  }
+}
